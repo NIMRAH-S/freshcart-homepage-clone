@@ -32,12 +32,13 @@ A fully responsive **homepage clone of FreshCart** built using **HTML**, **CSS**
 
 ## 📂 Folder Structure
 
-- freshcart-homepage-clone/
-- │
-- ├── index.html # Main HTML file
+- Frontend Project/
+- ├── frontend.html # Main HTML file (includes embedded JavaScript/jQuery)
 - ├── style.css # Custom CSS styles
-- ├── script.js # JavaScript & jQuery interactions
-- ├── /images # Local image assets (used in banners, products, etc.)
+- ├── grocery-banner.png # Image assets
+- ├── slide-1.jpg
+- ├── product-1.png
+- ├── ...more images
 - └── README.md # Project documentation
 
 
@@ -55,20 +56,18 @@ Fully responsive across:
 
 ## 🚀 How to Run Locally
 
-1. Clone the repository:
+1. Clone or download the repository:
 
    ```bash
-   git clone https://github.com/your-username/freshcart-homepage-clone.git
-
-2. Open index.html in any web browser.
-
+   git clone https://github.com/your-username/Frontend-Project.git
+   
+2. Open frontend.html in any web browser.
 ✅ No build tools or server setup required.
 
-📝 Notes
-- This project is frontend-only and does not include backend functionality (e.g., cart logic, login system, authentication, database).
-- All images are referenced from local file paths. For GitHub deployment or live preview, make sure to upload the images to your repo and update image URLs if needed.
-- JavaScript is used for:
-  - Custom carousel control
-  - Countdown timer
-  - Dropdown interactions (with jQuery)
+---
 
+### 📝 Notes
+- This is a frontend-only project. No backend logic (e.g., login, cart functionality, database) is implemented.
+- All images are placed in the same folder as the HTML and CSS files — so no need to change any image paths.
+- JavaScript and jQuery are written directly inside the HTML file:
+   - Used for carousel control, dropdowns, countdown timer, and interactivity.
