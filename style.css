@@ -1,0 +1,351 @@
+
+   .top-bar {
+     background-color: #f8f9fa;
+   }
+   .custom-navbar {
+     padding-top: 8px; /* space b/t content and border*/
+     padding-bottom: 8px;
+     background-color: white !important; /* Force white background */
+   }
+   .search-container {
+     width: 450px; /* width for search */
+   }
+   .btn-location {
+     color: #6c757d; /* Bootstrap's secondary text color */
+     border-color: #dee2e6; /* Light gray border */
+   }
+   .search-icon {
+     position: absolute;
+     right: 10px;
+     top: 50%;
+     transform: translateY(-50%); /* moves (or transforms) the element vertically upwards by 50% of its own height */
+     color: #6c757d;
+     pointer-events: none;
+   }
+   .search-wrapper {
+     position: relative;
+   }
+   /* Hide  search icon when input is focused */
+   .search-wrapper input:focus + .search-icon {
+     opacity: 0;
+   }
+   .nav-icons {
+     display: flex;
+     gap: 20px;
+     margin-left: auto; /* Moves all the icons to right */
+   }
+   .nav-icon {
+     font-size: 1.25rem;
+     color: #2B3445;
+     position: relative;
+   }
+   .nav-icon:hover {
+     color: #D23F57;
+   }
+   .nav-icon .badge {
+     position: absolute;
+     top: -5px;
+     right: -10px;
+     font-size: 0.6rem;
+   }
+
+   .all-departments-btn {
+     background-color: mediumseagreen;
+     color: white;
+     border: none;
+     padding: 10px 20px;
+   }
+
+   /* Custom slider styles */
+   .custom-slider {
+     height: 200px;
+   }
+   .custom-slider img {
+     object-fit: cover;
+     /*height: 100%;*/
+     width: 80%;
+   }
+   #imageSlider {
+     height: 200px;
+   }
+   #imageSlider .carousel-inner,
+   #imageSlider .carousel-item {
+     height: 100%;
+   }
+    #imageSlider img {
+     width: 80%;
+     margin: 0 auto; /* Centers the image */
+     display: block; /* Needed for margin auto to work */
+     object-fit: cover;
+     height: 100%;
+   }
+   /* Card Customization Classes */
+  .custom-card {
+    width: 100%; /* Responsive width */
+    max-width: 200px; /* Default max size */
+    margin-bottom: 1.5rem;
+    transition: transform 0.3s ease;
+  }
+  .custom-card-img {
+    height: 120px; /* Default image height */
+    object-fit: contain;
+    padding: 10px;
+  }
+  .custom-card-body {
+    padding: 1rem;
+    text-align: center;
+  }
+
+  /* Size Adjustment Classes */
+  .card-sm {
+    max-width: 150px;
+  }
+  .card-sm .custom-card-img {
+    height: 90px;
+  }
+  .card-md {
+    max-width: 200px;
+  }
+  .card-md .custom-card-img {
+    height: 120px;
+  }
+  .card-lg {
+    max-width: 250px;
+  }
+  .card-lg .custom-card-img {
+    height: 150px;
+  }
+.featured-categories-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+  /* Category Carousel Styles */
+.category-carousel {
+  position: relative;
+  margin: 20px 0;
+}
+
+.category-slider {
+  overflow: hidden;
+  width: 100%;
+  position: relative; /* Added for arrow positioning */
+}
+
+.category-slide-track {
+  display: flex;
+  transition: transform 0.5s ease;
+  width: 100%;
+}
+
+.category-slide {
+  flex: 0 0 16.666%; /* Show 6 items by default */
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+/* Carousel Arrow Styles */
+.carousel-arrows-container {
+  position: relative;
+  right: 0;
+  display: flex;
+  gap: 10px;
+  z-index: 10;
+  --arrow-vertical-position: 0.02%; /* CSS variable for easy adjustment */
+}
+
+.carousel-arrow {
+  width: 40px;
+  height: 40px;
+  background: white;
+  border-radius: 50%;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: none;
+  color: #333;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+  transform: translateY(0); /* Remove previous transform */
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .category-slide {
+    flex: 0 0 20%; /* 5 items */
+  }
+}
+
+@media (max-width: 992px) {
+  .category-slide {
+    flex: 0 0 50%; /* 4 items */
+  }
+}
+
+@media (max-width: 768px) {
+  .category-slide {
+    flex: 0 0 33.333%; /* 3 items */
+  }
+ 
+  @media (max-width: 768px) {
+  .carousel-arrows-container {
+    --arrow-vertical-position: 25%; /* Adjust vertical position on smaller screens */
+  }
+}
+}
+@media (max-width: 576px) {
+  .category-slide {
+    flex: 0 0 50%; /* 2 items */
+  }
+ 
+  .carousel-arrow {
+    width: 35px;
+    height: 35px;
+    font-size: 1rem;
+  }
+}
+
+.custom-card-2img {
+    object-fit: contain;
+    padding: 10px;
+}
+
+.countdown-box {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 8px 12px;
+  min-width: 60px;
+}
+
+@media (min-width: 1200px) {
+    .custom-col-xl-5 {
+      flex: 0 0 20%;
+      max-width: 20%;
+    }
+  }
+
+@media (max-width: 1200px) {
+  .mega-menu-dropdown {
+    min-width: 100%;
+  }
+}
+.mega-menu-dropdown {
+   position: absolute !important;
+  top: 100%;
+  left: 0;
+  transform: translateX(-350px) !important; /* This shifts the dropdown 350px to the left */
+  min-width: 1200px;
+  z-index: 1000;
+}
+
+.banner-wrapper {
+    position: relative;
+}
+
+.banner-text {
+    top: 0;
+    left: 0;
+    padding: 1rem;
+}
+
+/*Two image side by side*/
+  .promo-banner {
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    min-height: 200px;
+    padding: 30px;
+  }
+
+  .banner-1 {
+    background-image: url('D:\\Frontend Project\\grocery-banner.png');
+  }
+
+  .banner-2 {
+    background-image: url('D:\\Frontend Project\\grocery-banner-2.jpg');
+  }
+
+  /* Popular product */
+  .popular-products-img {
+    object-fit: contain;
+    height: 250px;
+  }
+
+  /* 5 columns per row on xl screens */
+  @media (min-width: 1200px) {
+    .custom-col-xl-5 {
+      flex: 0 0 20%;
+      max-width: 20%;
+    }
+  }
+
+/* Daily best sells*/
+  /* Left image box background */
+  .daily-sell-banner {
+    background-image: url('D:\\Frontend Project\\banner-Daily Best Sells.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 470px;
+    padding: 30px;
+  }
+
+  /* Product images */
+  .daily-sell-product-img {
+    object-fit: contain;
+    height: 250px;
+  }
+
+/*Feature heighlight*/
+  .feature-icon {
+    font-size: 2rem;
+    color: green;
+  }
+ /* Position of nav bar on small screen*/
+@media (max-width: 768px) {
+  .navbar-toggler {
+    margin-top: -95px;
+  }
+}
+/*Image size on small screen*/
+.slider-bg1 {
+  background: url('D:/Frontend Project/slide-1.jpg') center center / cover no-repeat;
+  height: 100%;
+  width: 100%;
+  border-radius: 0.5rem;
+}
+
+/* On mobile, make it smaller */
+@media (max-width: 767.98px) {
+  #imageSlider {
+    height: 400px;
+    width:100%
+  }
+
+  .slider-bg {
+    background-size: cover;
+    border-radius: 0.5rem;
+  }
+}
+
+.slider-bg2 {
+  background: url('D:/Frontend Project/slide-2.jpg') center center / cover no-repeat;
+  height: 100%;
+  width: 100%;
+  border-radius: 0.5rem;
+}
+
+/* On mobile, make it smaller */
+@media (max-width: 767.98px) {
+  #imageSlider {
+    height: 400px;
+    width:100%
+  }
+
+  .slider-bg {
+    background-size: cover;
+    border-radius: 0.5rem;
+  }
+}
