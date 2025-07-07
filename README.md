@@ -33,7 +33,7 @@ A fully responsive **homepage clone of FreshCart** built using **HTML**, **CSS**
 ## 📂 Folder Structure
 
 - freshcart-homepage-clone/
-- │
+  │
 - ├── index.html # Main HTML file
 - ├── style.css # Custom CSS styles
 - ├── script.js # JavaScript & jQuery interactions
